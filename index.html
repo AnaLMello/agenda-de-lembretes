@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Lembretes</title>
+  <!-- fonte poppins  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <title>Lembretes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	 <!-- header -->
+	<div class="header">
+	  <p class="comprimento">Bem vinda, DTI</p>
+	  <img class="logo-dti" src="logodti.png">
+	</div>
+  
+
+
+   <div class="container1">
+	   	<p class="descricao-container1">Do que você quer se lembrar?</p>
+		<p class="subtitle">Preencha os campos abaixo para adiconar um lembrete:</p>
+   </div>	
+	
+
+
+    <div class="container-cadastro">
+	<!-- calendário  -->
+			<div class="alinhamento">
+				<div class="wrapper">
+
+					 <h2 class="title-container1">Agenda Lembretes</h2>
+					 
+					<header>
+					<p class="current-date"></p>
+					<div class="icons">
+					  <span id="prev" class="material-symbols-rounded">chevron_left</span>
+					  <span id="next" class="material-symbols-rounded">chevron_right</span>
+					</div>
+				  </header>
+
+				  <div class="calendar">
+						<ul class="weeks">
+						  <li>Dom</li>
+						  <li>Seg</li>
+						  <li>Ter</li>
+						  <li>Qua</li>
+						  <li>Qui</li>
+						  <li>Sex</li>
+						  <li>Sab</li>
+						</ul>
+						<ul class="days"></ul>
+				  </div>
+
+				  <p class="cliqueaqui"> Clique nos dias para ver os lembretes </p><br>
+
+				</div>
+			</div>
+	<!-- end calendário  -->
+
+
+		<form id="lembrete-form" class="form-cadastro">
+		
+			<div class="geral">
+
+				<div class="titulo">
+				  <label for="reminder-name" class="name">Título do lembrete:</label>
+				  <input type="text" id="titulo" placeholder="seu título" class="input-name"required>
+			</div>
+		  
+			<div class="descricao-lembrete">
+				  <label for="reminder-name" class="name">Descrição:</label>
+				  <input type="text" id="descricao" placeholder="sua descrição" class="input-name" required>
+			</div>
+		  
+			<div class="data-lembrete">
+				  <label for="reminder-date" class="name">Data:</label>
+				  <input type="date" id="data" placeholder="DataEvento" class="input-date" required>
+			</div>
+				
+				
+				<div class="row">
+					<div class="text-center">
+						<P class="title-lembrete"> Lista de Lembretes </P>
+					</div>
+				                         <br>
+					<div class="container-cadastro">
+					  <ul id="lembretes-lista"></ul>
+					</div>
+				</div>
+
+			</div>	
+
+		
+		  	<div class="button-cadastro">
+				<button type="submit" id="adicionar-lembrete" class="button-adicionar" >Adicionar lembrente</button>
+			</div>
+			
+	   </form>	
+
+	</div>
+	<br><br>
+	
+
+    
+
+<script src="script.js" defer ></script>
+<script src="lembrete.js"></script>
+  
+</body>
+
+</html>

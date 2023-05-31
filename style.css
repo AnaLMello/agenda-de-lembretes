@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* menu  */
+.header{
+    display: flex;
+    background-color: #EEEEEE;
+    max-width: 100%;  
+    padding-left: 104em ;
+    padding-top: 1em ;
+    padding-bottom: 1em ;
+
+}
+
+.comprimento{
+    margin-top: 1.5em;
+  
+}
+
+.logo-dti{
+    padding-left: 1em;
+}
+
+/* fim do menu  */
+
+
+
+/* container 1 introdução e comprimento  */
+
+.title-container1{
+    color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.descricao-container1{
+    text-align: center;
+    color: #28B8C0;
+    padding-top: 1.5em;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.subtitle{
+  text-align: center;
+  color: #000000;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  font-size: 19px;
+  font-weight: 400;
+}
+/* end container 1 introdução e comprimento  */
+
+
+
+
+/* container cadastro  */
+
+.container-cadastro {
+    width: 100%;
+    max-width: 90%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    padding: 1em;
+}
+
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 6em;
+}
+
+.name{
+    font-weight: 600;
+    color: #28B8C0;
+}
+
+.input-name{
+    display: block;
+    border-radius: 3px;
+    padding: 0.6em ;
+    margin-top: 2em;
+    color: #000;
+}
+
+
+
+.input-date{
+    display: block;
+    border-radius: 3px;
+    margin-top: 2em;
+    padding: 0.6em ;
+
+}
+
+/* configuração do button submit  */
+.button-cadastro{
+    display: flex;
+    padding: 20px 0;
+ 
+   /*justify-content: flex-end;*/
+	margin: auto;
+	width: 50%;
+}
+
+
+
+.button-adicionar{
+
+	padding: 1em 4em;
+	font-size: medium;
+	font-weight: 600;
+	background-color: #28B8C0;
+	border-radius: 3px;
+	border-color: #28B8C0;
+}
+
+/* end configuração do button submit  */
+
+/* end container cadastro  */
+/* configuração do calendário  */
+
+
+
+.has-reminder {
+  background-color: yellow;
+}
+
+.alinhamento{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+
+
+
+.wrapper{
+  width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 5px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 200;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaaaaa;
+  
+}
+
+	
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background:  #28B8C0;
+  
+}
+.days li:not(.active):hover::before{
+  background: #aeeff8;
+}
+
+.cliqueaqui{
+  font-size: 14px;
+  color:#28B8C0;
+  text-align: center;
+}
+/* end configuração do calendário  */
+
+
+/* config lembretes */
+
+.title-lembrete{
+  font-weight: 600;
+  background-color: #28B8C0;
+  color: #EEEEEE;
+  font-size: 25px;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.row{
+   margin-left: 12em;
+}
+
+/* end config lembrete */
